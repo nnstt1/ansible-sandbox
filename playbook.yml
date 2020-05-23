@@ -1,5 +1,8 @@
 ---
 - hosts: all
+  roles:
+    - role: geerlingguy.java
+      become: yes
   tasks:
     - debug:
         msg: Happy Automation !!
